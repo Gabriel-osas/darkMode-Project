@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body id="www">
+    <header>
+        <div class="logoh">
+            <img src="logo.svg" alt="logo">
+        </div>
+        <button>Try it free</button>
+        <label id="dark" class="switch" onclick="darkMode()">
+            <input  type="checkbox">
+            <span  class="slider round"></span>
+        </label>
+    </header>
+    <section class="main" id="main"
+        style="background-image: url(bg-hero-desktop.svg); background-position: center; background-size: cover;">
+        <div class="mainsection">
+            <div class="textsid">
+                <h1 id="qwe">Build The Community Your Fans Will Love</h1>
+                <p id="ewq">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
+                    connections with your users as you engage in genuine discussion.</p>
+                <button> <a href="#"> Get Started for Free </a></button>
+                
+            </div>
+            <div class="imgside">
+                <img src="illustration-mockups.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="subb" id="subb">
+        <section class="sub" id="dark">
+            <div class="subsub" id="subsu">
+                <div class="textside">
+                    <h1 id="plm">Grow Together</h1>
+                    <p id="mlp">Generate meaningful discussions with your audience and build a strong, loyal community. Think of
+                        the
+                        insightful conversations you miss out on with feedback form</p>
+                </div>
+                <div class="imgside">
+                    <img src="illustration-grow-together.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="sub">
+            <div class="subsub" id="subbs">
+                <div class="imgside">
+                    <img src="illustration-flowing-conversation.svg" alt="">
+                </div>
+                <div class="textside">
+                    <h1 id="xcv">Flowing Conversations</h1>
+                    <p id="vcx">You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+                        just-in-time
+                        loading for a more natural flow.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sub" id="dark">
+            <div class="subsub" id="subs">
+                <div class="textside">
+                    <h1 id="texts">Yours Users</h1>
+                    <p id="tex">It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+                        once
+                        signed in to your app, your users can start chatting immediately.</p>
+                </div>
+                <div class="imgside" >
+                    <img src="illustration-your-users.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="subsection" id="darker" onclick="darkMode()">
+            <div class="subsubsec">
+                <h1>Ready To Build Your Community?</h1>
+                <button>Get Started For Free</button>
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        <div class="footer">
+            <div class="flogo" style="width: 40%;">
+                <img class="fimg" src="footer-logo.svg" alt="">
+                <p> <img src="icon-location.svg" alt="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.
+                </p>
+                <p> <img src="icon-phone.svg" alt="">
+                    +1-543-123-4567
+                </p>
+                <p> <img src="icon-email.svg" alt="">
+                    example@huddle.com
+                </p>
+            </div>
+
+            <div class="col">
+                <ul>
+                    <li>About Us</li>
+                    <li>What We Do</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <ul>
+                    <li>Career</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="icons">
+                <!-- <a href="3"> <img  src="facebook-f-brands.svg" alt=""></a>
+           <a href="3"> <img src="twitter-brands.svg" alt=""></a> -->
+                <a href="3"><i class='fab fa-facebook-f'></i></a>
+                <a href="3"><i class='fab fa-twitter'></i></a>
+                <a href="3"><i class='fab fa-instagram'></i></a>
+                
+            </div>
+        </div>
+        <p>© Copyright 2018 Huddle. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        function darkMode() {
+            document.getElementById('darker').style.backgroundColor = "black";
+            document.getElementById('darker').style.color = "white";
+            document.getElementById('subs').style.backgroundColor = "black";
+            document.getElementById('texts').style.color = "white";
+            document.getElementById('tex').style.color = "white";
+            document.getElementById('subbs').style.backgroundColor = "black";
+            document.getElementById('xcv').style.color = "white";
+            document.getElementById('vcx').style.color = "white";
+            document.getElementById('subsu').style.backgroundColor = "black";
+            document.getElementById('plm').style.color = "white";
+            document.getElementById('mlp').style.color = "white";
+            document.getElementById('www').style.backgroundColor = "black";
+            document.getElementById('main').style.backgroundColor = "black";
+            document.getElementById('qwe').style.color = "white";
+            document.getElementById('ewq').style.color = "white";
+        }
+
+
+
+        // function darkMode() {
+        //     let i = document.getElementById('main');
+        //     if (i.style.backgroundColor == "hsl(193, 100%, 96%)") {
+        //         i.style.backgroundColor = "black";
+        //     } else {
+        //         i.style.backgroundColor = "white";
+        //         i.style.backgroundColor = "black";
+        //     }
+            
+
+        //     let x = document.getElementById('darker');
+        //     if (x.style.backgroundColor === "") {
+        //         x.style.backgroundColor = "black";
+        //     } else {
+        //         x.style.backgroundColor = "white"
+        //     }
+        // }
+
+
+    </script>
+
+    <!-- <button class="divbut" style="background-color:#91C731; padding: 40px; color: white; font-size: 50px; border-radius: 20px; font-style: italic; border: none; cursor: pointer; text-align: center;"><b> YES! SEND ME BOOK <br> ASAP! </b></button>
+    <div style="text-align: center; height: 80px; position: fixed; bottom: 0%; right: 0%; background-color:rgb(44, 44, 44); width:100%;">
+        <a href="" style="color: white; font-size: 14px;"><button style="border:none; margin-top: -10px; box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.459); height: 60px; background-color: #216fc3; text-align: center; width: 15%; cursor: pointer; "><b>GET FREE BOOK</b></button></a>
+    </div> -->
+
+
+
+
+</body>
+
+</html>
