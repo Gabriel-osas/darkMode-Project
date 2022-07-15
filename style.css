@@ -423,28 +423,28 @@ header button:hover {
 
 @media screen and (max-width: 767px) {
     .subsection {
-    margin-top:0px;
-    margin-bottom: 16px;
-    margin-left:0px;
-    margin-right:0px;
+    margin-top:0px  !important;
+    margin-bottom: 16px  !important;
+    margin-left:0px  !important;
+    margin-right:0px  !important;
     }
 }
 
 @media screen and (max-width: 768px) {
     .subsection {
-    margin-top:0px;
-    margin-bottom: 16px;
-    margin-left:0px;
-    margin-right:0px;
+    margin-top:0px  !important;
+    margin-bottom: 16px  !important;
+    margin-left:0px  !important;
+    margin-right:0px  !important;
     }
 }
 
 @media screen and (max-width: 992px) {
     .subsection {
-        margin-top:0px;
-        margin-bottom: 16px;
-        margin-left:0px;
-        margin-right:0px
+        margin-top:0px !important;
+        margin-bottom: 16px !important;
+        margin-left:0px !important;
+        margin-right:0px !important;
     }
 }
 
