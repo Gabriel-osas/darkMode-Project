@@ -8,6 +8,7 @@
     <title>Dark Mode Project</title>
     <link rel="stylesheet" href="style.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
 </head>
 
 <body id="www">
@@ -15,9 +16,9 @@
         <div class="logoh">
             <img src="logo.svg" alt="logo">
         </div>
-        <button>Try it free</button>
-        <label id="dark" class="switch" onclick="darkMode()">
-            <input  type="checkbox">
+        <button onclick="darkMode()" >Try it free</button>
+        <label id="dark" class="switch" >
+            <input  type="checkbox" onclick="darkMode()">
             <span  class="slider round"></span>
         </label>
     </header>
@@ -76,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="subsection" id="darker" onclick="darkMode()">
+        <section class="subsection" id="darker" onclick="lightMode()">
             <div class="subsubsec">
                 <h1>Ready To Build Your Community?</h1>
                 <button>Get Started For Free</button>
@@ -130,23 +131,77 @@
 
 
     <script>
+
         function darkMode() {
-            document.getElementById('darker').style.backgroundColor = "black";
-            document.getElementById('darker').style.color = "white";
-            document.getElementById('subs').style.backgroundColor = "black";
-            document.getElementById('texts').style.color = "white";
-            document.getElementById('tex').style.color = "white";
-            document.getElementById('subbs').style.backgroundColor = "black";
-            document.getElementById('xcv').style.color = "white";
-            document.getElementById('vcx').style.color = "white";
-            document.getElementById('subsu').style.backgroundColor = "black";
-            document.getElementById('plm').style.color = "white";
-            document.getElementById('mlp').style.color = "white";
-            document.getElementById('www').style.backgroundColor = "black";
-            document.getElementById('main').style.backgroundColor = "black";
-            document.getElementById('qwe').style.color = "white";
-            document.getElementById('ewq').style.color = "white";
+            var element = document.getElementById('www');
+            element.classList.toggle("dark-mode");
+
+            let x = document.getElementById('main');
+            x.classList.toggle("dark-mode");
+
+            let i = document.getElementById('ewq');
+            i.classList.toggle("white-text");
+
+            let y = document.getElementById('mlp');
+            y.classList.toggle('white-text');
+
+            let c = document.getElementById('plm');
+            c.classList.toggle('white-text');
+
+            let o = document.getElementById('qwe');
+            o.classList.toggle('white-text');
+
+            let z = document.getElementById('vcx');
+            z.classList.toggle('white-text');
+
+            let j = document.getElementById('xcv');
+            j.classList.toggle('white-text');
+
+            let u = document.getElementById('tex');
+            u.classList.toggle('white-text');
+
+            let xy = document.getElementById('texts');
+            xy.classList.toggle('white-text');
+
+            let yx = document.getElementById('darker');
+            yx.classList.toggle('dark-mode white-text');
+
         }
+        // function darkMode() {
+        //     document.getElementById('darker').style.backgroundColor = "black";
+        //     document.getElementById('darker').style.color = "white";
+        //     document.getElementById('subs').style.backgroundColor = "black";
+        //     document.getElementById('texts').style.color = "white";
+        //     document.getElementById('tex').style.color = "white";
+        //     document.getElementById('subbs').style.backgroundColor = "black";
+        //     document.getElementById('xcv').style.color = "white";
+        //     document.getElementById('vcx').style.color = "white";
+        //     document.getElementById('subsu').style.backgroundColor = "black";
+        //     document.getElementById('plm').style.color = "white";
+        //     document.getElementById('mlp').style.color = "white";
+        //     document.getElementById('www').style.backgroundColor = "black";
+        //     document.getElementById('main').style.backgroundColor = "black";
+        //     document.getElementById('qwe').style.color = "white";
+        //     document.getElementById('ewq').style.color = "white";
+        // }
+
+        // function lightMode() {
+        //     document.getElementById('darker').style.backgroundColor = "white";
+        //     document.getElementById('darker').style.color = "black";
+        //     document.getElementById('subs').style.backgroundColor = "white";
+        //     document.getElementById('texts').style.color = "black";
+        //     document.getElementById('tex').style.color = "black";
+        //     document.getElementById('subbs').style.backgroundColor = "white";
+        //     document.getElementById('xcv').style.color = "black";
+        //     document.getElementById('vcx').style.color = "white";
+        //     document.getElementById('subsu').style.backgroundColor = "white";
+        //     document.getElementById('plm').style.color = "black";
+        //     document.getElementById('mlp').style.color = "black";
+        //     document.getElementById('www').style.backgroundColor = "white";
+        //     document.getElementById('main').style.backgroundColor = "white";
+        //     document.getElementById('qwe').style.color = "black";
+        //     document.getElementById('ewq').style.color = "black";
+        // }
 
         window.onload = function(){ 
                 alert("Hi there Welcome to Gabriel Ominu Github Dark Mode project build up; pls take note that this is a learning practical and not a functioning website! ");
@@ -155,9 +210,8 @@
         // function darkMode() {
         //     let i = document.getElementById('main');
         //     if (i.style.backgroundColor == "hsl(193, 100%, 96%)") {
-        //         i.style.backgroundColor = "black";
-        //     } else {
         //         i.style.backgroundColor = "white";
+        //     } else {
         //         i.style.backgroundColor = "black";
         //     }
             
@@ -169,6 +223,8 @@
         //         x.style.backgroundColor = "white"
         //     }
         // }
+    
+ 
 
 
     </script>
